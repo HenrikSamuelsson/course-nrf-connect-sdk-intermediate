@@ -17,4 +17,11 @@ Will cover:execution primitives, How threads ands interrupt handling co-exist. T
 
 Will be able to schedule application tasks and pass data between threads after taking this lesson. 
 
-### Objectives
+### Learning Objectives
+
+- Execution variants, along with their determinism and preemption nature.
+- The thread life cycle.
+- Zephyr kernel options and scheduler.
+- Implications of adding subsystems and networks stacks to a application.
+- Application task scheduling using execution primitives and correct priority levels.
+- How to pass data using messages and FIFO's.
