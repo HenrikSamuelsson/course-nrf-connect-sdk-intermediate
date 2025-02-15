@@ -6,22 +6,19 @@ Notes and code related to taking the course [nRF Connect SDK Intermediate](https
 
 ### Content
 
-This lessons covers thread management and how to pass data between threads when using nRF Connect/Zephyr. There are two different execution contexts:
+This lessons covers thread management and how to pass data between threads when using nRF Connect/Zephyr.
 
-1. Thread context
-2. Interrupt context
+There are two different execution contexts; thread context, and interrupt context, each associated with different usage and implications.
 
-Each associated with different usage and implications.
+Will also cover execution primitives, and how threads ands interrupt handling co-exist. Then follows info on the life cycle of a thread, and the scheduler. Finally comes the topic of exchanging data between threads.
 
-Will cover:execution primitives, How threads ands interrupt handling co-exist. Then follows info on the life cycle of a thread and the scheduler. Finally comes the topic of exchanging data between threads.
-
-Will be able to schedule application tasks and pass data between threads after taking this lesson. 
+We will be able to schedule application tasks and pass data between threads after taking this lesson. 
 
 ### Learning Objectives
 
-- Execution variants, along with their determinism and preemption nature.
+- Execution variants, with their determinism and preemption nature.
 - The thread life cycle.
 - Zephyr kernel options and scheduler.
 - Implications of adding subsystems and networks stacks to a application.
-- Application task scheduling using execution primitives and correct priority levels.
-- How to pass data using messages and FIFO's.
+- Task scheduling, execution primitives, and priority levels.
+- Passing data using messages and FIFO's.
