@@ -22,3 +22,21 @@ We will be able to schedule application tasks and pass data between threads afte
 - Implications of adding subsystems and networks stacks to a application.
 - Task scheduling, execution primitives, and priority levels.
 - Passing data using messages and FIFO's.
+
+### Boot-up Sequence and Execution Context
+
+Will learn how to schedule application tasks. But first we investigate the setup for what we get ready-made when basing our application on the nRF Connect SDK.
+
+#### Boot-up Sequence
+
+##### Part 1: Early Boot Sequence
+
+Initially there is a stage where the system is brought up to the point where it it is capable of executing C code, this is not covered by this course.
+
+##### Part 2: Kernel Initialization
+
+Second stage is the kernel initialization where static devices are enabled in two steps; `PRE_KERNEL_1` and `PRE_KERNEL_2`. Exactly what devices depends on the project setup but a Clock Control driver will always be enabled in `PRE_KERNEL_1`, and also a System Time driver in `PRE_KERNEL_1`.
+
+##### Part 3: Multithreading Preparation
+
+TODO
